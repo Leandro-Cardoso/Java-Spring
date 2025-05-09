@@ -7,13 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping
 public class Controller {
+
     @GetMapping("/")
     public String index() {
-        return "\n\nProjeto para o estudo mais detalhado do Java com SpringBoot...";
+        return "<h1>Projeto para o estudo mais detalhado do Java com SpringBoot...</h1>";
     }
 
     @GetMapping("/helloworld")
     public String helloWorld() {
-        return "\nHello world !!!\n";
+        return "<h1>Hello world !!!</h1>";
     }
+
 }
